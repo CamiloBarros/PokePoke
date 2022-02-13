@@ -17,3 +17,7 @@ This application was developed with the aim of putting into practice React conce
   <img src='https://github.com/CamiloBarros/PokePoke/blob/master/docs/img/1.PNG' width='700px' />
   <img src='https://github.com/CamiloBarros/PokePoke/blob/master/docs/img/2.PNG' width='200px' />
 </div>
+
+## Possible Improvements
+- [x] Functionality to compare two or more pokemon at the same time.
+- [ ] Improve the design
