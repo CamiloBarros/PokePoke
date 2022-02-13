@@ -19,5 +19,5 @@ This application was developed with the aim of putting into practice React conce
 </div>
 
 ## Possible Improvements
-*- [ ] Functionality to compare two or more pokemon at the same time.*
+*- [ ] Functionality to compare two or more pokemon at the same time.*  
 *- [ ] Improve the design*
