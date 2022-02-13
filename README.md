@@ -1,6 +1,6 @@
 # Technologies
 [![Technologie](https://img.shields.io/badge/Tecnologie-React-blue)](https://es.reactjs.org/)
-[![Techonolgie](https://img.shields.io/badge/Tecnologie-Vite-orange)](https://vitejs.dev/)
+[![Techonolgies](https://img.shields.io/badge/Tecnologie-Vite-orange)](https://vitejs.dev/)
 [![Technologie](https://img.shields.io/badge/Tecnologie-Tailwinds-bluelight)](https://tailwindcss.com/)
 # PokePoke
 PokePoke is a frontend application that connects to a free API called PokeApi, and facilitates the visualization and search of pokemon through a minimalist interface. 
