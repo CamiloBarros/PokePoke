@@ -10,3 +10,6 @@ This application was developed with the aim of putting into practice React conce
 ***- Search Bar*** *: By typing the name of the pokemon and pressing enter we can perform a search in the API and display the data of this in case it is found.*  
 ***- Card*** *: The main presentation of the information is a card where we can see an image of the Pokémon and its basic characteristics.*  
 ***- Responsive*** *: We implemented a responsive design for smaller screens, this way we maintain an order in the rendered elements.*
+
+
+## Captures
