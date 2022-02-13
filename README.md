@@ -13,3 +13,7 @@ This application was developed with the aim of putting into practice React conce
 
 
 ## Captures
+<div align='center'>
+  <img src='./docs/img/1.png' width='700px' />
+  <img src='./docs/img/2.png' width='200px' />
+</div>
