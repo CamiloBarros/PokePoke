@@ -1,19 +1,20 @@
-import { useEffect, useState } from 'react'
+import { useContext, useEffect } from 'react'
 import { fetchPokemon } from '../services/fetchApi'
+import { Context } from '../context/PkContext'
 
-export default function usePokemon () {
-  const [state, setState] = useState({})
-  const random = Math.floor(Math.random() * 10)
+export default function usePokemon (id = null) {
+  const { pokemon, setPokemon } = useContext(Context)
+  const pokemonId = id || Math.floor(Math.random() * 100)
 
   useEffect(
     () => {
-      fetchPokemon(random).then(
+      fetchPokemon(pokemonId).then(
         data => {
-          setState(data)
+          setPokemon(data)
         }
       )
     }, []
   )
 
-  return state
+  return pokemon
 }

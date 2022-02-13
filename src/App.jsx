@@ -1,20 +1,14 @@
 import Card from './components/Card'
 import Nav from './components/Nav'
-import usePokemon from './hooks/usePokemon'
+import PkProvider from './context/PkContext'
 
 function App () {
-  const pokemon = usePokemon()
-
-  if (pokemon.data === undefined) {
-    return null
-  }
-
-  const { name, stats, weight } = pokemon.data
-
   return (
-    <main className='font-mono w-screen h-screen bg-gradient-to-l from-sky-400'>
-      <Nav />
-      <Card name={name} stats={stats} weight={weight} pokemon={pokemon} />
+    <main className='font-mono w-screen h-screen bg-gradient-to-l from-red-500 p-5 sm:p-0 overflow-auto'>
+      <PkProvider>
+        <Nav />
+        <Card />
+      </PkProvider>
     </main>
   )
 }

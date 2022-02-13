@@ -11,9 +11,10 @@ export const fetchAllPokemons = () => {
 }
 
 export const fetchPokemon = async (id) => {
-  const data = await axios.get(baseUrl + `pokemon/${id}`)
+  const { data } = await axios.get(baseUrl + `pokemon/${id}`)
+
   return {
-    sprite: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${id}.svg`,
-    data: data.data
+    sprite: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${data.id}.svg`,
+    data: data
   }
 }
