@@ -6,7 +6,7 @@ import { fetchPokemon } from '../services/fetchApi'
  * todo: Utilizar un estado global para los datos del pokemon
  */
 
-export default function useSearch () {
+export default function useSearch (setLocalState) {
   const [search, setSearch] = useState('')
   const { setPokemon } = useContext(Context)
 
@@ -21,6 +21,7 @@ export default function useSearch () {
         .then(
           data => {
             setPokemon(data)
+            setLocalState(data)
           }
         )
         .catch(() => console.log('Pokemon no encontrado...'))
