@@ -1,24 +1,27 @@
 import React from 'react'
 import usePokemon from '../hooks/usePokemon'
+import useSearch from '../hooks/useSearch'
+import BarSearch from './BarSearch'
 
 const Card = () => {
   const pokemon = usePokemon()
+  const { handleInput, handleKeyPress, search } = useSearch()
 
   if (pokemon.data === undefined) {
     return null
   }
   const { name, stats, weight } = pokemon.data
-
   return (
     <>
-      <div className='border border-gray-200 rounded-md text-center p-4 shadow-sm mt-5 sm:my-10 mx-auto max-w-md bg-white'>
+      <BarSearch handleInput={handleInput} handleKeyPress={handleKeyPress} search={search} />
+      <div className='border border-gray-200 rounded-md text-center p-4 shadow-sm mt-5 mx-auto max-w-md bg-white bg-opacity-60'>
 
         <div className=' text-sky-900'>
           <div className=''>
             <img
               src={pokemon.sprite}
               alt={`Imagen: ${name}`}
-              className='rounded-full h-72 w-72 border shadow-sm mb-8 mx-auto'
+              className='rounded-lg h-72 w-72 mb-8 mx-auto'
             />
           </div>
           <h1 className='font-semibold text-white bg-red-500 rounded-full py-1 my-2 w-4/5 mx-auto'>
