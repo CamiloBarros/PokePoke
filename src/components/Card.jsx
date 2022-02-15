@@ -21,7 +21,7 @@ const Card = () => {
             <img
               src={pokemon.sprite}
               alt={`Imagen: ${name}`}
-              className='rounded-lg h-72 w-72 mb-8 mx-auto'
+              className='rounded-lg h-52 w-52 sm:h-72 sm:w-72 mb-8 mx-auto'
             />
           </div>
           <h1 className='font-semibold text-white bg-red-500 rounded-full py-1 my-2 w-4/5 mx-auto'>
