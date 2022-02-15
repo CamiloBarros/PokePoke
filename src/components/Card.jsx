@@ -14,7 +14,7 @@ const Card = () => {
   return (
     <>
       <BarSearch handleInput={handleInput} handleKeyPress={handleKeyPress} search={search} />
-      <div className='border border-gray-200 rounded-md text-center p-4 shadow-sm mt-5 mx-auto max-w-md bg-white bg-opacity-60'>
+      <div className=' rounded-md text-center p-4 shadow-sm mt-5 mx-auto max-w-md bg-white/40 backdrop-blur-xl'>
 
         <div className=' text-sky-900'>
           <div className=''>

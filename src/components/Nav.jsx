@@ -10,10 +10,10 @@ const Nav = () => {
           <img src={logo} alt='' className='block w-5 mr-1' /> <h1>Pokesearch</h1>
         </div>
 
-        <ul className='text-white flex justify-between w-52'>
-          <li><a href='/' className='hover:border-b-2'>Home</a></li>
-          <li><a href='/' className='hover:border-b-2'>Compare</a></li>
-          <li><a href='/' className='hover:border-b-2'>About</a></li>
+        <ul className='text-white flex justify-between w-52 '>
+          <li><a href='/' className='hover:border-b-2 transition ease-in duration-700'>Home</a></li>
+          <li><a href='/' className='hover:border-b-2 transition ease-in duration-700'>Compare</a></li>
+          <li><a href='/' className='hover:border-b-2 transition ease-in duration-700'>About</a></li>
         </ul>
 
       </nav>
