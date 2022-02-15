@@ -17,6 +17,7 @@ export default function useSearch (setLocalState) {
 
   const handleKeyPress = (event) => {
     if (event.key === 'Enter') {
+      if (search.match(/^[1-9]+$/)) {
       fetchPokemon(search.toLowerCase())
         .then(
           data => {
@@ -28,6 +29,7 @@ export default function useSearch (setLocalState) {
         .finally(
           setSearch('')
         )
+      }
     }
   }
 
