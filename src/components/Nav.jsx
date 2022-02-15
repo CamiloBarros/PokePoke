@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../favicon.svg'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Nav = () => {
   return (
@@ -12,9 +12,9 @@ const Nav = () => {
         </div>
 
         <ul className='text-white flex justify-between w-52 '>
-          <li><Link to='/' className='hover:border-b-2 transition ease-in duration-700'>Home</Link></li>
-          <li><Link to='compare' className='hover:border-b-2 transition ease-in duration-700'>Compare</Link></li>
-          <li><Link to='about' className='hover:border-b-2 transition ease-in duration-700'>About</Link></li>
+          <li><NavLink to='/' className={navData => navData.isActive ? 'border-b-2' : 'hover:border-b-2'}>Home</NavLink></li>
+          <li><NavLink to='compare' className={navData => navData.isActive ? 'border-b-2' : 'hover:border-b-2'}>Compare</NavLink></li>
+          <li><NavLink to='about' className={navData => navData.isActive ? 'border-b-2' : 'hover:border-b-2'}>About</NavLink></li>
         </ul>
 
       </nav>
