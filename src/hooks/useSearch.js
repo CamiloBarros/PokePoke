@@ -13,7 +13,7 @@ export default function useSearch (setLocalState) {
 
   const handleKeyPress = (event) => {
     if (event.key === 'Enter') {
-      if (search !== '') {
+      if (search.trim() !== '') {
         fetchPokemon(search.toLowerCase())
           .then(
             data => {
