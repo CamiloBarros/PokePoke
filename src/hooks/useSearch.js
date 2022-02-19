@@ -1,10 +1,8 @@
-import { useContext, useState } from 'react'
-import { Context } from '../context/PkContext'
+import { useState } from 'react'
 import { fetchPokemon } from '../services/fetchApi'
 
-export default function useSearch (setLocalState) {
+export default function useSearch ({ setPokemon }) {
   const [search, setSearch] = useState('')
-  const { setPokemon } = useContext(Context)
 
   const handleInput = (event) => {
     const { value } = event.target
@@ -18,7 +16,6 @@ export default function useSearch (setLocalState) {
           .then(
             data => {
               setPokemon(data)
-              setLocalState(data)
             }
           )
           .catch(() => console.log('Pokemon no encontrado...'))

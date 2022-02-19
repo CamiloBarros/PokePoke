@@ -1,12 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import usePokemon from '../hooks/usePokemon'
 import useSearch from '../hooks/useSearch'
 import BarSearch from './BarSearch'
 
-const Card = () => {
-  const [pokemon, setPokemon] = useState({})
-  const { handleInput, handleKeyPress, search } = useSearch(setPokemon)
-  usePokemon(setPokemon)
+const Card = ({ id: key }) => {
+  const [pokemon, setPokemon] = usePokemon({ key: key })
+  const { handleInput, handleKeyPress, search } = useSearch({ setPokemon })
 
   if (pokemon.data === undefined) {
     return null
